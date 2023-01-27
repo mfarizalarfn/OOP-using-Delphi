@@ -1,0 +1,106 @@
+object FrmAddItem: TFrmAddItem
+  Left = 0
+  Top = 0
+  Caption = 'Add Item'
+  ClientHeight = 433
+  ClientWidth = 835
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object RzPanel1: TRzPanel
+    Left = 0
+    Top = 0
+    Width = 835
+    Height = 33
+    Align = alTop
+    BorderOuter = fsBump
+    TabOrder = 0
+    ExplicitTop = 40
+    ExplicitWidth = 701
+  end
+  object RzPanel2: TRzPanel
+    Left = 0
+    Top = 33
+    Width = 737
+    Height = 400
+    Align = alClient
+    BorderOuter = fsBump
+    TabOrder = 1
+    ExplicitWidth = 649
+    ExplicitHeight = 263
+    object SMDBGrid1: TSMDBGrid
+      Left = 2
+      Top = 2
+      Width = 733
+      Height = 396
+      Align = alClient
+      DataSource = DsItem
+      Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      Flat = False
+      BandsFont.Charset = DEFAULT_CHARSET
+      BandsFont.Color = clWindowText
+      BandsFont.Height = -11
+      BandsFont.Name = 'Tahoma'
+      BandsFont.Style = []
+      Groupings = <>
+      GridStyle.Style = gsNormal
+      GridStyle.OddColor = clWindow
+      GridStyle.EvenColor = clWindow
+      TitleHeight.PixelCount = 24
+      FooterColor = clBtnFace
+      ExOptions = [eoENTERlikeTAB, eoKeepSelection, eoStandardPopup, eoBLOBEditor, eoTitleWordWrap, eoFilterAutoApply]
+      RegistryKey = 'Software\Scalabium'
+      RegistrySection = 'SMDBGrid'
+      WidthOfIndicator = 11
+      DefaultRowHeight = 17
+      ScrollBars = ssHorizontal
+    end
+  end
+  object RzPanel3: TRzPanel
+    Left = 737
+    Top = 33
+    Width = 98
+    Height = 400
+    Align = alRight
+    BorderOuter = fsBump
+    TabOrder = 2
+    ExplicitLeft = 648
+    ExplicitHeight = 263
+  end
+  object FDQueryItem: TFDQuery
+    Active = True
+    Connection = DM.FDConnection1
+    SQL.Strings = (
+      'SELECT * FROM SELECTITEM')
+    Left = 272
+    Top = 137
+  end
+  object DsItem: TDataSource
+    Left = 344
+    Top = 137
+  end
+  object FDQueryAddItem: TFDQuery
+    Connection = DM.FDConnection1
+    Left = 504
+    Top = 153
+  end
+  object DsAddItem: TDataSource
+    Left = 576
+    Top = 153
+  end
+end

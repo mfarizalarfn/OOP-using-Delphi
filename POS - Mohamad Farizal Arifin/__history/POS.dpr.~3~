@@ -1,0 +1,25 @@
+program POS;
+
+uses
+  Vcl.Forms,
+  UMain in 'UMain.pas' {frmMain},
+  UMasterData in 'UMasterData.pas' {frmMasterData},
+  UDM in 'UDM.pas' {DM: TDataModule},
+  UBarang in 'UBarang.pas' {frmBarang},
+  USupplier in 'USupplier.pas' {frmSupplier},
+  UCustomer in 'UCustomer.pas' {frmCustomer},
+  UUnit in 'UUnit.pas' {frmUnit},
+  UTransaksiData in 'UTransaksiData.pas' {FrmTransaksiData},
+  UPembelian in 'UPembelian.pas' {FrmTransaksiData1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmMain, frmMain);
+  Application.CreateForm(TDM, DM);
+  Application.CreateForm(TFrmTransaksiData, FrmTransaksiData);
+  Application.CreateForm(TFrmTransaksiData1, FrmTransaksiData1);
+  Application.Run;
+end.

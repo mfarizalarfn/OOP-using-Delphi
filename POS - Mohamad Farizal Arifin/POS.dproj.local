@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/10/03 21:26:36.000.365,=C:\Users\mfari\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/20 19:31:06.000.553,=C:\Users\mfari\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/20 19:40:47.000.179,=C:\Users\mfari\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 22:51:18.000.518,=C:\Users\mfari\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 22:52:11.000.510,E:\TI.20.B1 OOP\POS\UMain.dfm=C:\Users\mfari\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/12/02 22:52:11.000.510,E:\TI.20.B1 OOP\POS\UMain.pas=C:\Users\mfari\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 22:52:18.000.566,E:\TI.20.B1 OOP\POS\POS.dproj=C:\Users\mfari\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/12/02 23:07:52.000.572,=E:\TI.20.B1 OOP\POS\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 23:12:26.000.827,E:\TI.20.B1 OOP\POS\UMasterData.pas=E:\TI.20.B1 OOP\POS\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 23:12:26.000.827,E:\TI.20.B1 OOP\POS\UMasterData.dfm=E:\TI.20.B1 OOP\POS\Unit1.dfm</Transaction>
+    <Transaction>2022/12/02 23:14:49.000.446,=E:\TI.20.B1 OOP\POS\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 23:19:29.000.611,E:\TI.20.B1 OOP\POS\UDM.pas=E:\TI.20.B1 OOP\POS\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 23:19:29.000.611,E:\TI.20.B1 OOP\POS\UDM.dfm=E:\TI.20.B1 OOP\POS\Unit1.dfm</Transaction>
+    <Transaction>2022/12/02 23:23:59.000.574,=E:\TI.20.B1 OOP\POS\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 23:24:41.000.169,E:\TI.20.B1 OOP\POS\UBarang.dfm=E:\TI.20.B1 OOP\POS\Unit1.dfm</Transaction>
+    <Transaction>2022/12/02 23:24:41.000.169,E:\TI.20.B1 OOP\POS\UBarang.pas=E:\TI.20.B1 OOP\POS\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 23:27:20.000.034,=E:\TI.20.B1 OOP\POS\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 23:28:00.000.154,E:\TI.20.B1 OOP\POS\USupplier.dfm=E:\TI.20.B1 OOP\POS\Unit1.dfm</Transaction>
+    <Transaction>2022/12/02 23:28:00.000.154,E:\TI.20.B1 OOP\POS\USupplier.pas=E:\TI.20.B1 OOP\POS\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 23:29:25.000.719,=E:\TI.20.B1 OOP\POS\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 23:31:06.000.513,E:\TI.20.B1 OOP\POS\UCustomer.dfm=E:\TI.20.B1 OOP\POS\Unit1.dfm</Transaction>
+    <Transaction>2022/12/02 23:31:06.000.513,E:\TI.20.B1 OOP\POS\UCustomer.pas=E:\TI.20.B1 OOP\POS\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 23:31:27.000.173,=E:\TI.20.B1 OOP\POS\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 23:32:31.000.973,E:\TI.20.B1 OOP\POS\UUnit.pas=E:\TI.20.B1 OOP\POS\Unit1.pas</Transaction>
+    <Transaction>2022/12/02 23:32:31.000.973,E:\TI.20.B1 OOP\POS\UUnit.dfm=E:\TI.20.B1 OOP\POS\Unit1.dfm</Transaction>
+    <Transaction>2022/12/18 17:12:09.000.377,=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2022/12/18 17:16:15.000.429,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\UTransaksiData.pas=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2022/12/18 17:16:15.000.429,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\UTransaksiData.dfm=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.dfm</Transaction>
+    <Transaction>2022/12/18 17:48:27.000.748,=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2022/12/18 17:48:50.000.365,=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2022/12/18 17:49:16.000.058,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\UPembelian.pas=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2022/12/18 17:49:16.000.058,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\UPembelian.dfm=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.dfm</Transaction>
+    <Transaction>2022/12/18 18:25:22.000.017,=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2022/12/18 18:25:46.000.017,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\UCreatePO.dfm=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.dfm</Transaction>
+    <Transaction>2022/12/18 18:25:46.000.017,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\UCreatePO.pas=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2022/12/27 20:38:03.000.981,=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2022/12/27 21:14:24.000.096,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\UAddItem.pas</Transaction>
+    <Transaction>2022/12/27 21:14:24.000.096,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.dfm=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\UAddItem.dfm</Transaction>
+    <Transaction>2023/01/14 14:26:14.000.812,=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2023/01/14 14:29:57.000.417,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\UPurchaseReport.pas=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2023/01/14 14:29:57.000.417,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\UPurchaseReport.dfm=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.dfm</Transaction>
+    <Transaction>2023/01/14 22:12:06.000.149,=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2023/01/14 22:12:57.000.938,=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2023/01/14 22:13:30.000.989,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\UUsers.dfm=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.dfm</Transaction>
+    <Transaction>2023/01/14 22:13:30.000.989,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\UUsers.pas=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2023/01/14 23:03:23.000.289,=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2023/01/14 23:03:34.000.220,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\ULogin.pas=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.pas</Transaction>
+    <Transaction>2023/01/14 23:03:34.000.220,E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\ULogin.dfm=E:\TI.20.B1 OOP\POS - Mohamad Farizal Arifin\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

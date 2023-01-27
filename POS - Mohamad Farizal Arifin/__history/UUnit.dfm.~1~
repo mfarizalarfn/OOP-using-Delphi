@@ -1,0 +1,23 @@
+inherited frmUnit: TfrmUnit
+  Caption = 'Master Unit'
+  FormStyle = fsMDIChild
+  Position = poMainFormCenter
+  Visible = True
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel1: TPanel
+    inherited DBNavigator1: TDBNavigator
+      Hints.Strings = ()
+      ExplicitLeft = 2
+      ExplicitTop = 2
+    end
+  end
+  inherited Panel2: TPanel
+    ExplicitTop = 35
+    ExplicitHeight = 326
+  end
+  inherited Panel3: TPanel
+    ExplicitTop = 35
+    ExplicitHeight = 326
+  end
+end

@@ -1,0 +1,49 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 302
+  ClientWidth = 658
+  Color = clHighlight
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object BtnGantiJudul: TBitBtn
+    Left = 150
+    Top = 119
+    Width = 75
+    Height = 25
+    Caption = 'Ganti Judul'
+    TabOrder = 0
+    OnClick = BtnGantiJudulClick
+  end
+  object BtnTutupJudul: TBitBtn
+    Left = 231
+    Top = 119
+    Width = 75
+    Height = 25
+    Caption = 'Tutup Judul'
+    TabOrder = 1
+  end
+  object StaticText1: TStaticText
+    Left = 104
+    Top = 96
+    Width = 35
+    Height = 17
+    Caption = 'Label1'
+    TabOrder = 2
+  end
+  object ButtonedEdit1: TButtonedEdit
+    Left = 150
+    Top = 92
+    Width = 291
+    Height = 21
+    TabOrder = 3
+  end
+end

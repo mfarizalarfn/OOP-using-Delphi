@@ -1,0 +1,139 @@
+unit UPembelian;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, UTransaksiData, Data.DB,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
+  Vcl.Grids, Vcl.DBGrids, SMDBGrid, RzTabs, RzPanel, RzDBNav, Vcl.ExtCtrls,
+  RzButton;
+
+type
+  TFrmPembelian = class(TFrmTransaksiData)
+    FDQueryHeaderPURCHASEID: TWideStringField;
+    FDQueryHeaderVENDACCOUNT: TWideStringField;
+    FDQueryHeaderPURCHASEDATE: TDateField;
+    FDQueryHeaderISPPN: TBooleanField;
+    FDQueryHeaderTOTALAMOUNT: TFMTBCDField;
+    FDQueryHeaderGRANDTOTAL: TFMTBCDField;
+    FDQueryHeaderUSERID: TWideStringField;
+    FDQueryHeaderTRANSDATE: TSQLTimeStampField;
+    FDQueryDetailPURCHASEID: TWideStringField;
+    FDQueryDetailITEMID: TWideStringField;
+    FDQueryDetailQTY: TFMTBCDField;
+    FDQueryDetailUNIT: TWideStringField;
+    FDQueryDetailPRICE: TFMTBCDField;
+    FDQueryDetailLINEAMOUNT: TFMTBCDField;
+    FDQueryDetailRECORDID: TLargeintField;
+    FDQueryDetailTRANSDATE: TSQLTimeStampField;
+    FDQueryDetailUSERID: TWideStringField;
+    FDQueryVendor: TFDQuery;
+    DataSourceVendor: TDataSource;
+    RzPanel3: TRzPanel;
+    RzBtnAddItem: TRzBitBtn;
+    procedure FormCreate(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FDQueryHeaderAfterInsert(DataSet: TDataSet);
+    procedure FDQueryHeaderNewRecord(DataSet: TDataSet);
+    procedure RzBtnAddItemClick(Sender: TObject);
+    procedure FDQueryHeaderAfterScroll(DataSet: TDataSet);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPembelian: TFrmPembelian;
+
+implementation
+ Uses UDM, UCreatePO, UAddItem;
+{$R *.dfm}
+
+procedure TFrmPembelian.FDQueryHeaderAfterInsert(DataSet: TDataSet);
+begin
+  inherited;
+
+  DM.FDQueryGetRecordId.Active := True;
+  FDQueryHeaderPURCHASEDATE.AsDateTime :=  DM.FDQueryGetRecordId.fieldByName('TRANSDATE').AsDateTime;
+  FDQueryHeaderTRANSDATE.AsDateTime :=   DM.FDQueryGetRecordId.fieldByName('TRANSDATE').AsDateTime;
+  FDQueryHeaderTOTALAMOUNT.AsCurrency := 0;
+  FDQueryHeaderGRANDTOTAL.AsCurrency :=  0;
+  FDQueryHeaderISPPN.AsBoolean := True;
+
+
+end;
+
+procedure TFrmPembelian.FDQueryHeaderAfterScroll(DataSet: TDataSet);
+begin
+  inherited;
+    with FDQueryDetail do
+    begin
+      sql.Clear;
+      sql.Add('SELECT * FROM PURCHASEDETAIL WHERE PURCHASEID =:PURCHASEID');
+      params [0].AsString := FDQueryHeaderPURCHASEID.AsString;
+      Active := True;
+    end;
+end;
+
+procedure TFrmPembelian.FDQueryHeaderNewRecord(DataSet: TDataSet);
+begin
+  inherited;
+   if frmCreatePurchaseOrder = nil then
+     begin
+       Application.CreateForm(TfrmCreatePurchaseOrder,frmCreatePurchaseOrder);
+       frmCreatePurchaseOrder.Show;
+     end;
+end;
+
+procedure TFrmPembelian.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  inherited;
+  WindowState := wsMinimized;
+  frmPembelian := Nil;
+  Action := caFree;
+end;
+
+procedure TFrmPembelian.FormCreate(Sender: TObject);
+begin
+  inherited;
+   with FDQueryHeader do
+    begin
+      sql.Clear;
+      sql.Add('SELECT * FROM PURCHASEHEADER');
+      Active := True;
+    end;
+
+       with FDQueryDetail do
+    begin
+      sql.Clear;
+      sql.Add('SELECT * FROM PURCHASEDETAIL');
+      Active := True;
+    end;
+
+      with FDQueryVendor do
+    begin
+      sql.Clear;
+      sql.Add('SELECT * FROM VENDOR');
+      Active := True;
+    end;
+
+
+end;
+
+procedure TFrmPembelian.RzBtnAddItemClick(Sender: TObject);
+begin
+  inherited;
+  if FrmAddItem = nil then
+     begin
+       Application.CreateForm(TFrmAddItem,FrmAddItem);
+       FrmAddItem.vType := 'PO';
+       FrmAddItem.vPurchaseId :=  FDQueryHeaderPURCHASEID.AsString;
+       FrmAddItem.Show;
+     end;
+end;
+
+end.

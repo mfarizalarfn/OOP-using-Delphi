@@ -1,0 +1,51 @@
+unit UPercabangan;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    RadioGroup1: TRadioGroup;
+    RadioGroup2: TRadioGroup;
+    RadioGroup3: TRadioGroup;
+    RadioGroup4: TRadioGroup;
+    Label1: TLabel;
+    Label2: TLabel;
+    Button1: TButton;
+    ComboBox1: TComboBox;
+    Edit1: TEdit;
+    Label3: TLabel;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    RadioButton3: TRadioButton;
+    Label4: TLabel;
+    Edit2: TEdit;
+    Button2: TButton;
+    Label5: TLabel;
+    CheckBox1: TCheckBox;
+    CheckBox2: TCheckBox;
+    CheckBox3: TCheckBox;
+    Button3: TButton;
+    Label6: TLabel;
+    Edit3: TEdit;
+    RadioGroup5: TRadioGroup;
+    Button4: TButton;
+    Label7: TLabel;
+    Edit4: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+end.

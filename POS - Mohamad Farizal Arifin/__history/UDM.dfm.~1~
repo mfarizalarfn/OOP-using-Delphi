@@ -1,0 +1,20 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 327
+  Width = 540
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'SERVER=DESKTOP-S18LQ60\SQLSERVER2016'
+      'User_Name=rizal'
+      'Password=nmax4254'
+      'ApplicationName=Point of Sales (POS)'
+      'Workstation=DESKTOP-S18LQ60'
+      'DATABASE=POS'
+      'MARS=yes'
+      'DriverID=MSSQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 184
+    Top = 88
+  end
+end

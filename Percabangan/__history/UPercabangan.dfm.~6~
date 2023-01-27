@@ -1,0 +1,231 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form Percabangan'
+  ClientHeight = 453
+  ClientWidth = 906
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 56
+    Top = 56
+    Width = 38
+    Height = 13
+    Caption = 'Jurusan'
+  end
+  object Label2: TLabel
+    Left = 64
+    Top = 88
+    Width = 29
+    Height = 13
+    Caption = 'Harga'
+  end
+  object Label3: TLabel
+    Left = 408
+    Top = 56
+    Width = 38
+    Height = 13
+    Caption = 'Jurusan'
+  end
+  object Label4: TLabel
+    Left = 408
+    Top = 128
+    Width = 29
+    Height = 13
+    Caption = 'Harga'
+  end
+  object Label5: TLabel
+    Left = 400
+    Top = 256
+    Width = 43
+    Height = 13
+    Caption = 'Makanan'
+  end
+  object Label6: TLabel
+    Left = 416
+    Top = 336
+    Width = 24
+    Height = 13
+    Caption = 'Total'
+  end
+  object Label7: TLabel
+    Left = 56
+    Top = 328
+    Width = 29
+    Height = 13
+    Caption = 'Harga'
+  end
+  object ComboJurusan: TRadioGroup
+    Left = 24
+    Top = 24
+    Width = 273
+    Height = 146
+    Caption = 'Combo Box'
+    TabOrder = 0
+  end
+  object RadioGroup2: TRadioGroup
+    Left = 368
+    Top = 24
+    Width = 297
+    Height = 177
+    Caption = 'Radio Button'
+    TabOrder = 1
+  end
+  object RadioGroup3: TRadioGroup
+    Left = 24
+    Top = 204
+    Width = 273
+    Height = 161
+    Caption = 'Radio Group'
+    TabOrder = 2
+  end
+  object RadioGroup4: TRadioGroup
+    Left = 368
+    Top = 224
+    Width = 297
+    Height = 161
+    Caption = 'Check Box'
+    TabOrder = 3
+  end
+  object Button1: TButton
+    Left = 115
+    Top = 112
+    Width = 75
+    Height = 25
+    Caption = 'Cek Harga'
+    TabOrder = 4
+  end
+  object TComboBox
+    Left = 100
+    Top = 53
+    Width = 145
+    Height = 21
+    TabOrder = 5
+    Items.Strings = (
+      'Jakarta'
+      'Yogyakarta'
+      'Surabaya')
+  end
+  object EditHarga: TEdit
+    Left = 104
+    Top = 85
+    Width = 121
+    Height = 21
+    TabOrder = 6
+    OnChange = EditHargaChange
+  end
+  object RadioButton1: TRadioButton
+    Left = 472
+    Top = 55
+    Width = 113
+    Height = 17
+    Caption = 'Jakarta'
+    TabOrder = 7
+  end
+  object RadioButton2: TRadioButton
+    Left = 472
+    Top = 78
+    Width = 113
+    Height = 17
+    Caption = 'Yogyakarta'
+    TabOrder = 8
+  end
+  object RadioButton3: TRadioButton
+    Left = 472
+    Top = 101
+    Width = 113
+    Height = 17
+    Caption = 'Surabaya'
+    TabOrder = 9
+  end
+  object Edit2: TEdit
+    Left = 472
+    Top = 128
+    Width = 121
+    Height = 21
+    TabOrder = 10
+  end
+  object Button2: TButton
+    Left = 486
+    Top = 155
+    Width = 75
+    Height = 25
+    Caption = 'Cek Harga'
+    TabOrder = 11
+  end
+  object CheckBox1: TCheckBox
+    Left = 480
+    Top = 264
+    Width = 97
+    Height = 17
+    Caption = 'CheckBox1'
+    TabOrder = 12
+  end
+  object CheckBox2: TCheckBox
+    Left = 480
+    Top = 287
+    Width = 97
+    Height = 17
+    Caption = 'CheckBox2'
+    TabOrder = 13
+  end
+  object CheckBox3: TCheckBox
+    Left = 480
+    Top = 310
+    Width = 97
+    Height = 17
+    Caption = 'CheckBox3'
+    TabOrder = 14
+  end
+  object Button3: TButton
+    Left = 568
+    Top = 287
+    Width = 75
+    Height = 25
+    Caption = 'Cari Total'
+    TabOrder = 15
+  end
+  object EditHargaJurusan: TEdit
+    Left = 91
+    Top = 325
+    Width = 121
+    Height = 21
+    TabOrder = 16
+  end
+  object RadioGroupJurusan: TRadioGroup
+    Left = 40
+    Top = 222
+    Width = 150
+    Height = 90
+    Caption = 'Jurusan'
+    Items.Strings = (
+      'Jakarta'
+      'Yogyakarta'
+      'Surabaya')
+    TabOrder = 17
+  end
+  object Button4: TButton
+    Left = 216
+    Top = 240
+    Width = 75
+    Height = 25
+    Caption = 'Cek Harga'
+    TabOrder = 18
+    OnClick = Button4Click
+  end
+  object Edit4: TEdit
+    Left = 480
+    Top = 336
+    Width = 121
+    Height = 21
+    TabOrder = 19
+    Text = 'Edit4'
+  end
+end

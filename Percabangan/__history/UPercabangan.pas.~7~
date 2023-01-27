@@ -1,0 +1,90 @@
+unit UPercabangan;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    ComboJurusan: TRadioGroup;
+    RadioGroup2: TRadioGroup;
+    RadioGroup3: TRadioGroup;
+    RadioGroup4: TRadioGroup;
+    Label1: TLabel;
+    Label2: TLabel;
+    Button1: TButton;
+    EditHarga: TEdit;
+    Label3: TLabel;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    RadioButton3: TRadioButton;
+    Label4: TLabel;
+    Edit2: TEdit;
+    Button2: TButton;
+    Label5: TLabel;
+    CheckBox1: TCheckBox;
+    CheckBox2: TCheckBox;
+    CheckBox3: TCheckBox;
+    Button3: TButton;
+    Label6: TLabel;
+    EditHargaJurusan: TEdit;
+    RadioGroupJurusan: TRadioGroup;
+    Button4: TButton;
+    Label7: TLabel;
+    Edit4: TEdit;
+    procedure EditHargaChange(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button4Click(Sender: TObject);
+begin
+ if RadioGroupJurusan.ItemIndex = 0 then
+  begin
+    EditHargaJurusan.Text := '100.000' ;
+  end
+ else if RadioGroupJurusan.ItemIndex = 1 then
+  begin
+    EditHargaJurusan.Text := '200.000' ;
+  end
+ else if RadioGroupJurusan.ItemIndex = 2 then
+  begin
+    EditHargaJurusan.Text := '300.000' ;
+  end
+
+end;
+
+procedure TForm1.EditHargaChange(Sender: TObject);
+begin
+ If ComboJurusan = 'Jakarta' then
+    begin
+      EditHarga.Text := '100.000';
+    end
+  else if ComboJurusan = 'Yogyakarta' then
+    begin
+      EditHarga.Text := '200.000';
+    end
+  else if ComboJurusan = 'Surabaya' then
+    begin
+      EditHarga.Text := '300.000';
+    end
+  else
+    begin
+      EditHarga.Text := '0';
+    end;
+
+end;
+
+end.
